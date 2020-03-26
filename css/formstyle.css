@@ -1,0 +1,120 @@
+/* CSS */
+
+html {
+	box-sizing: border-box;
+}
+
+fieldset {
+    margin: 13px 8px 15px 8px;
+    border-color: black;
+}
+
+li {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+	text-align: center;
+}
+
+#content {
+    width: 700px;
+    position: relative;
+    margin: auto;
+	border: 1px solid black;
+    background-color: cadetblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    margin: 6px 0 0 8px;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: none;
+    background-image: linear-gradient(blue, #1e3682);
+}
+
+button:focus {
+    background-image: linear-gradient(firebrick, #1e3682);
+}
+
+input {
+    width: 250px;
+    text-align: left;
+    background-color: antiquewhite;
+}
+
+label {
+    width: 200px;
+    padding-right: 15px;
+    text-align: right;
+    float: left;
+}
+
+input, label {
+    display: inline-block;
+}
+
+textarea {
+    display: block;
+    width: auto;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+template {
+	color: firebrick;
+	font-size: 12px;
+}
+
+.oneques {
+}
+
+.oneques label {
+    width: auto;
+}
+
+.oneques input {
+    width: auto;
+    float: left;
+}
+
+#formstart {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.outline3 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.outline4 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.subfield {
+    border-width: thin;
+}
+
+.ta-label {
+    text-align: center;
+    width: auto;
+    margin: auto;
+}
+
+.reqfield span {
+    color: firebrick;
+    display: none;
+}
