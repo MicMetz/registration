@@ -48,18 +48,19 @@ button:focus {
 input {
     width: 250px;
     text-align: left;
+    color: black;
     background-color: antiquewhite;
 }
 
 label {
-    width: 200px;
+    width: 140px;
     padding-right: 15px;
-    text-align: right;
+    text-align: center;
     float: left;
 }
 
 input, label {
-    display: inline-block;
+
 }
 
 textarea {
@@ -114,7 +115,13 @@ template {
     margin: auto;
 }
 
-.reqfield span {
+li span {
+
+}
+
+.reqsp {
     color: firebrick;
-    display: none;
+    margin: auto;
+    text-align: center;
+    visibility: hidden;
 }

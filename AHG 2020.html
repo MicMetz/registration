@@ -27,7 +27,6 @@
 
 <body>
 <script src="scripts/input_Validation.js"></script>
-
 <div id="content">
     <header id="formheader">
         <h1 id="formstart">AHG Presenter Proposal Form 2020</h1>
@@ -44,32 +43,32 @@
             <div class="speakerinfo">
                 <!--                <h2>1st Presenter*</h2>-->
                 <ul>
-                    <li class="reqfield">
+                    <li>
                         <label for="fstspkr1">First Name:</label>
-                        <input id="fstspkr1" name="fstspkr1" type="text">
+                        <input id="fstspkr1" class="reqfield" name="fstspkr1" type="text" value="">
                         <span>
-                            <p>First Name cannot be left blank.</p>
+                            <p class="reqsp">First Name cannot be left blank.</p>
                         </span>
                     </li>
-                    <li class="reqfield">
+                    <li>
                         <label for="lstname1">Last Names:</label>
-                        <input id="lstname1" name="lstname1" type="text">
+                        <input id="lstname1" class="reqfield" name="lstname1" type="text" value="">
                         <span>
-                            <p>Last Name cannot be left blank.</p>
+                            <p class="reqsp">Last Name cannot be left blank.</p>
                         </span>
                     </li>
-                    <li class="reqfield">
+                    <li>
                         <label for="telno1">Phone Number:</label>
-                        <input id="telno1" name="telno1" type="text">
+                        <input id="telno1" class="reqfield" name="telno1" type="text" value="">
                         <span>
-                            <p>Phone Number cannot be left blank.</p>
+                            <p class="reqsp">Phone Number cannot be left blank.</p>
                         </span>
                     </li>
-                    <li class="reqfield">
+                    <li>
                         <label for="email1">e-mail:</label>
-                        <input id="email1" name="email1" type="text">
+                        <input id="email1" class="reqfield" name="email1" type="text" value="">
                         <span>
-                            <p>e-mail cannot be left blank.</p>
+                            <p class="reqsp">e-mail cannot be left blank.</p>
                         </span>
                     </li>
                 </ul>
@@ -84,6 +83,7 @@
                         <label for="degree1">Highest Academic Degree:</label>
                         <input id="degree1" name="degree1" type="text">
                     </li>
+                    <br>
                     <li>
                         <label for="company1">Institution or Organization:</label>
                         <input id="company1" name="company1" type="text">
@@ -112,11 +112,10 @@
                 </fieldset>
                 <fieldset class="subfield">
                     <div class="suggest_form">
-                        <label class="ta-label" for="Speaker1bio"><strong>Presenter 1 bio&nbsp;</strong>(1500 characters
-                            maximum)</label>
+                        <label class="ta-label" for="Speaker1bio"><h3>Presenter 1 bio&nbsp;</h3>(1500 characters maximum)</label>
 
 
-                        <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="4"
+                        <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="7"
                                   maxlength="1003">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum fuga harum id labore laborum nulla officiis quibusdam, soluta ut. A ad at, blanditiis commodi consectetur fugiat id quos sit?</textarea>
 
 
@@ -124,41 +123,29 @@
                 </fieldset>
                 <div class="formcol">
 
-
                     <!-- bottom of expanding sections -->
-
 
                     <div id="propinfo">
 
-                        <p class="outline4">Proposal Information</p>
+                        <h3 class="outline4">Proposal Information</h3>
 
 
                         <fieldset class="subfield">
-                            <legend><h3><span id="proplegend">Title of Proposal</span><span
-                                    class="star">*</span></h3> (150 characters maximum)
-                            </legend>
-                            <ul>
-                                <li>
-                                    <label for="proptitle">Proposal Title:</label>
-                                    <input id="proptitle" name="proptitle" class="reqfield" type="text"
-                                           maxlength="152">
-
-                                </li>
-                            </ul>
-
+                            <legend><h4><span id="proplegend">Title of Proposal (150 characters maximum)</span><span class="star">*</span></h4></legend>
+                                <label for="proptitle">Proposal Title:</label>
+                                <input id="proptitle" name="proptitle" class="reqfield" type="text" maxlength="152">
+                                <span>
+                                    <p class="reqsp">Title cannot be left blank.</p>
+                                </span>
                         </fieldset>
-
-
                     </div>
-
-
                 </div>
-
-
             </div>
         </fieldset>
     </form>
     <button type="button" onclick="input_Validation()">Submit your proposal</button>
+
+
 </div>
 </body>
 </html>

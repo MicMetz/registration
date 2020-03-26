@@ -1,11 +1,14 @@
-function input_Validation() {
-    let target = document.getElementsByClassName("reqfield");
 
+
+function input_Validation() {
+    let report = document.getElementsByClassName("reqsp");
+    let target = document.getElementsByClassName("reqfield");
     for (let x = 0; x < target.length; x++) {
-        let tarVal = target[x].getElementsByTagName("input").value;
-        let report = target[x].getElementsByTagName("span");
-        if (tarVal.length < 1) {
-            report.style.display = "block";
+        if (target[x].value === "") {
+            report[x].style.visibility = "visible";
+        }
+        else {
+            report[x].style.visibility = "hidden";
         }
     }
 }
