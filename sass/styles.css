@@ -1,0 +1,26 @@
+#page {
+  background-color: #d3d8d3;
+}
+
+input[type=text] {
+  border-bottom: 2px solid #9b9b9b;
+  font-size: 1.1rem;
+  transition: border-color 0.3s;
+  outline: 0;
+  width: 50%;
+}
+
+input[type=text]:focus {
+  border-bottom: 2px solid #0d8011;
+  font-weight: 500;
+}
+input[type=text]:focus ~ label {
+  display: block;
+  position: absolute;
+  margin-top: 0;
+  transition: 0.8s;
+  color: black;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=styles.css.map */

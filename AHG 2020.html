@@ -40,39 +40,35 @@
                 <legend class="outline4"><h2>Speaker Information</h2></legend>
                 <section class="speakerinfo">
                     <ul>
-                        <li>
-                            <input id="fstspkr1" class="reqfield" name="fstspkr1" type="text" value="">
-                            <label for="fstspkr1" class="tlabel">First Name:</label>
-                            <span class="reqsp">First Name cannot be left blank.</span>
+                        <li class="form-item">
+                            <input id="fstspkr1" class="reqfield" name="fstspkr1" type="text" value=""><span class="reqsp">First Name cannot be left blank.</span>
+                            <label for="fstspkr1">First Name:</label>
                         </li>
-                        <li>
-                            <input id="lstname1" class="reqfield" name="lstname1" type="text" value="">
-                            <label for="lstname1" class="tlabel">Last Name:</label>
-                            <span class="reqsp">Last Name cannot be left blank.</span>
+                        <li class="form-item">
+                            <input id="lstname1" class="reqfield" name="lstname1" type="text" value=""><span class="reqsp">Last Name cannot be left blank.</span>
+                            <label for="lstname1">Last Name:</label>
                         </li>
-                        <li>
-                            <input id="telno1" class="reqfield" name="telno1" type="text" value="">
-                            <label for="telno1" class="tlabel">Phone Number:</label>
-                            <span class="reqsp">Phone Number cannot be left blank.</span>
+                        <li class="form-item">
+                            <input id="telno1" class="reqfield" name="telno1" type="text" value=""><span class="reqsp">Phone Number cannot be left blank.</span>
+                            <label for="telno1">Phone Number:</label>
                         </li>
-                        <li>
-                            <input id="email1" class="reqfield" name="email1" type="text" value="">
-                            <label for="email1" class="tlabel">e-mail:</label>
-                            <span class="reqsp">e-mail cannot be left blank.</span>
+                        <li class="form-item">
+                            <input id="email1" class="reqfield" name="email1" type="text" value=""><span class="reqsp">e-mail cannot be left blank.</span>
+                            <label for="email1">e-mail:</label>
                         </li>
                     </ul>
                 </section>
             </fieldset>
             <fieldset>
                 <legend class="outline4"><h2>Education</h2></legend>
-                <section class="speakerinfo">
+                <section class="speakerinfo2">
                     <ul>
-                        <li>
+                        <li class="form-item">
                             <input id="degree1" name="degree1" type="text">
                             <label for="degree1">Highest Academic Degree:</label>
                         </li>
                         <br>
-                        <li>
+                        <li class="form-item">
                             <input id="company1" name="company1" type="text">
                             <label for="company1">Institution or Organization:</label>
                         </li>
@@ -86,15 +82,15 @@
                     <fieldset class="subfield">
                         <legend><h3>Have you presented at a national conference or taught a college-level, semester-long course?*</h3></legend>
                         <div class="oneques">
-                        <span>
-                            <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio">
-                            <label for="natconfexp1_yes">yes</label>
-                        </span>
+                            <span  class="form-item">
+                                <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio">
+                                <label for="natconfexp1_yes">yes</label>
+                            </span>
                             <br>
-                            <span>
-                            <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio">
-                            <label for="natconfexp1_no">no</label>
-                        </span>
+                            <span  class="form-item">
+                                <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio">
+                                <label for="natconfexp1_no">no</label>
+                            </span>
                         </div>
                     </fieldset>
                     <fieldset class="subfield">
@@ -113,10 +109,12 @@
 
                             <fieldset class="subfield">
                                 <legend class="outline4"><h3>Proposal Information</h3></legend>
-                                <!--<span id="proplegend">Title of Proposal (150 characters maximum)</span><span class="star">*</span>-->
-                                <input id="proptitle" name="proptitle" class="reqfield" type="text" maxlength="152">
-                                <label for="proptitle">Proposal Title:</label>
-                                <span class="reqsp">Title cannot be left blank.</span>
+                                <ul class="form-item">
+                                    <li>
+                                        <input id="proptitle" name="proptitle" class="reqfield" type="text" maxlength="152"><span class="reqsp">Title cannot be left blank.</span>
+                                        <label for="proptitle">Proposal Title:</label>
+                                    </li>
+                                </ul>
                             </fieldset>
                         </section>
                     </div>

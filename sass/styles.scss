@@ -24,29 +24,25 @@ section h3 {
 
 }
 
-label {
-  position: absolute;
-}
+
 
 input[type="text"] {
   border-bottom: 2px solid $palegray;
   font-size: 1.1rem;
   transition: border-color 0.3s;
   outline: 0;
-  width: 100%;
-  padding: 5px 0;
+  width: 50%;
 }
 
 input[type="text"]:focus {
   ~ label {
     display: block;
-    margin-top: -25px;
     position: absolute;
+    margin-top: 0;
     transition: 0.8s;
     color: black;
     font-weight: 500;
   }
   border-bottom: 2px solid $deepgreen;
-  padding-top: 25px;
   font-weight: 500;
 }
