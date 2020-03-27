@@ -10,9 +10,12 @@ fieldset {
     border-color: black;
 }
 
+/*
 li {
     margin: 25px auto 5px 0;
 }
+
+ */
 
 ul {
     list-style-type: none;
@@ -78,6 +81,7 @@ textarea {
 .form-item {
     height: 50px;
     width: 100%;
+    margin: 25px auto 5px 0;
 }
 
 .speakerinfo {
@@ -88,12 +92,12 @@ textarea {
 }
 
 .oneques label {
-    width: auto;
+    display: inline-block;
+    width: fit-content;
 }
 
 .oneques input {
-    width: auto;
-    float: left;
+    display: inline-block;
 }
 
 #formstart {
