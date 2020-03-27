@@ -1,0 +1,52 @@
+
+// Font Sizes
+$labsize: 14px;
+$inpsize: 12px;
+// Colors
+$deepgreen: #0d8011;
+$lightpaper: #d3d8d3;
+$palegray: #9b9b9b;
+$plainwhite: #ffff;
+
+#page{
+  background-color: $lightpaper;
+}
+
+section h1 {
+
+}
+
+section h2 {
+
+}
+
+section h3 {
+
+}
+
+label {
+  position: absolute;
+}
+
+input[type="text"] {
+  border-bottom: 2px solid $palegray;
+  font-size: 1.1rem;
+  transition: border-color 0.3s;
+  outline: 0;
+  width: 100%;
+  padding: 5px 0;
+}
+
+input[type="text"]:focus {
+  ~ label {
+    display: block;
+    margin-top: -25px;
+    position: absolute;
+    transition: 0.8s;
+    color: black;
+    font-weight: 500;
+  }
+  border-bottom: 2px solid $deepgreen;
+  padding-top: 25px;
+  font-weight: 500;
+}

@@ -9,7 +9,8 @@
 
     <title>AHG Presenter Proposal Form</title>
     <link rel="stylesheet" id="Lora-css" href="fonts/css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/formstyle.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/basic.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="sass/styles.css" type="text/css" media="screen">
 
 
     <!-- enable HTML 5 elements in IE7&8 -->
@@ -22,7 +23,6 @@
           href="http://accessinghigherground.org/wp/wp-content/themes/AHG/css/ahg_scrn_ie_style4ahead-wform-4wp.css"/>
     <![endif]-->
 
-
 </head>
 
 <body>
@@ -30,68 +30,61 @@
 <div id="page">
     <header id="formheader">
         <h1 id="formstart">AHG Presenter Proposal Form 2020</h1>
-
-        <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 -
-            20,
-            2020</p>
+        <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20, 2020</p>
     </header>
     <div id="content">
 
-
-        <form action="http://webdevgroupcu.org/atlas4519/AHGpropform/AHG_saveprop2020.php" method="post"
-              id="AHGproposalform2020">
+        <form action="http://webdevgroupcu.org/atlas4519/AHGpropform/AHG_saveprop2020.php" method="post" id="AHGproposalform2020">
 
             <fieldset>
                 <legend class="outline4"><h2>Speaker Information</h2></legend>
-                <div class="speakerinfo">
-                    <!--                <h2>1st Presenter*</h2>-->
+                <section class="speakerinfo">
                     <ul>
                         <li>
-                            <label for="fstspkr1">First Name:</label>
                             <input id="fstspkr1" class="reqfield" name="fstspkr1" type="text" value="">
+                            <label for="fstspkr1" class="tlabel">First Name:</label>
                             <span class="reqsp">First Name cannot be left blank.</span>
                         </li>
                         <li>
-                            <label for="lstname1">Last Names:</label>
                             <input id="lstname1" class="reqfield" name="lstname1" type="text" value="">
+                            <label for="lstname1" class="tlabel">Last Name:</label>
                             <span class="reqsp">Last Name cannot be left blank.</span>
                         </li>
                         <li>
-                            <label for="telno1">Phone Number:</label>
                             <input id="telno1" class="reqfield" name="telno1" type="text" value="">
+                            <label for="telno1" class="tlabel">Phone Number:</label>
                             <span class="reqsp">Phone Number cannot be left blank.</span>
                         </li>
                         <li>
-                            <label for="email1">e-mail:</label>
                             <input id="email1" class="reqfield" name="email1" type="text" value="">
+                            <label for="email1" class="tlabel">e-mail:</label>
                             <span class="reqsp">e-mail cannot be left blank.</span>
                         </li>
                     </ul>
-                </div>
+                </section>
             </fieldset>
             <fieldset>
                 <legend class="outline4"><h2>Education</h2></legend>
-                <div class="speakerinfo">
+                <section class="speakerinfo">
                     <ul>
                         <li>
-                            <label for="degree1">Highest Academic Degree:</label>
                             <input id="degree1" name="degree1" type="text">
+                            <label for="degree1">Highest Academic Degree:</label>
                         </li>
                         <br>
                         <li>
-                            <label for="company1">Institution or Organization:</label>
                             <input id="company1" name="company1" type="text">
+                            <label for="company1">Institution or Organization:</label>
                         </li>
                     </ul>
-                </div>
+                </section>
             </fieldset>
             <fieldset>
                 <legend class="outline4">Additional Information</legend>
 
-                <div class="spkrques">
+                <section class="spkrques">
                     <fieldset class="subfield">
-                        <legend><h3>Have you presented at a national conference or taught a college-level, semester-long
-                            course?*</h3></legend>
+                        <legend><h3>Have you presented at a national conference or taught a college-level, semester-long course?*</h3></legend>
                         <div class="oneques">
                         <span>
                             <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio">
@@ -116,18 +109,18 @@
 
                         <!-- bottom of expanding sections -->
 
-                        <div id="propinfo">
+                        <section id="propinfo">
 
                             <fieldset class="subfield">
                                 <legend class="outline4"><h3>Proposal Information</h3></legend>
                                 <!--<span id="proplegend">Title of Proposal (150 characters maximum)</span><span class="star">*</span>-->
-                                <label for="proptitle">Proposal Title:</label>
                                 <input id="proptitle" name="proptitle" class="reqfield" type="text" maxlength="152">
+                                <label for="proptitle">Proposal Title:</label>
                                 <span class="reqsp">Title cannot be left blank.</span>
                             </fieldset>
-                        </div>
+                        </section>
                     </div>
-                </div>
+                </section>
             </fieldset>
         </form>
     </div>
