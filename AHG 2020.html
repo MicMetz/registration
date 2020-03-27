@@ -27,125 +27,111 @@
 
 <body>
 <script src="scripts/input_Validation.js"></script>
-<div id="content">
+<div id="page">
     <header id="formheader">
         <h1 id="formstart">AHG Presenter Proposal Form 2020</h1>
 
-        <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20,
+        <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 -
+            20,
             2020</p>
     </header>
+    <div id="content">
 
-    <form action="http://webdevgroupcu.org/atlas4519/AHGpropform/AHG_saveprop2020.php" method="post"
-          id="AHGproposalform2020">
 
-        <fieldset>
-            <legend class="outline4"><h2>Speaker Information</h2></legend>
-            <div class="speakerinfo">
-                <!--                <h2>1st Presenter*</h2>-->
-                <ul>
-                    <li>
-                        <label for="fstspkr1">First Name:</label>
-                        <input id="fstspkr1" class="reqfield" name="fstspkr1" type="text" value="">
-                        <span>
-                            <p class="reqsp">First Name cannot be left blank.</p>
-                        </span>
-                    </li>
-                    <li>
-                        <label for="lstname1">Last Names:</label>
-                        <input id="lstname1" class="reqfield" name="lstname1" type="text" value="">
-                        <span>
-                            <p class="reqsp">Last Name cannot be left blank.</p>
-                        </span>
-                    </li>
-                    <li>
-                        <label for="telno1">Phone Number:</label>
-                        <input id="telno1" class="reqfield" name="telno1" type="text" value="">
-                        <span>
-                            <p class="reqsp">Phone Number cannot be left blank.</p>
-                        </span>
-                    </li>
-                    <li>
-                        <label for="email1">e-mail:</label>
-                        <input id="email1" class="reqfield" name="email1" type="text" value="">
-                        <span>
-                            <p class="reqsp">e-mail cannot be left blank.</p>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend class="outline4">Education</legend>
-            <div class="speakerinfo">
-                <h2>1st Presenter*</h2>
-                <ul>
-                    <li>
-                        <label for="degree1">Highest Academic Degree:</label>
-                        <input id="degree1" name="degree1" type="text">
-                    </li>
-                    <br>
-                    <li>
-                        <label for="company1">Institution or Organization:</label>
-                        <input id="company1" name="company1" type="text">
-                    </li>
-                </ul>
-            </div>
-        </fieldset>
-        <fieldset>
-            <legend class="outline4">Additional Information</legend>
+        <form action="http://webdevgroupcu.org/atlas4519/AHGpropform/AHG_saveprop2020.php" method="post"
+              id="AHGproposalform2020">
 
-            <div class="spkrques">
-                <fieldset class="subfield">
-                    <legend><h3>Have you presented at a national conference or taught a college-level, semester-long
-                        course?*</h3></legend>
-                    <div class="oneques">
+            <fieldset>
+                <legend class="outline4"><h2>Speaker Information</h2></legend>
+                <div class="speakerinfo">
+                    <!--                <h2>1st Presenter*</h2>-->
+                    <ul>
+                        <li>
+                            <label for="fstspkr1">First Name:</label>
+                            <input id="fstspkr1" class="reqfield" name="fstspkr1" type="text" value="">
+                            <span class="reqsp">First Name cannot be left blank.</span>
+                        </li>
+                        <li>
+                            <label for="lstname1">Last Names:</label>
+                            <input id="lstname1" class="reqfield" name="lstname1" type="text" value="">
+                            <span class="reqsp">Last Name cannot be left blank.</span>
+                        </li>
+                        <li>
+                            <label for="telno1">Phone Number:</label>
+                            <input id="telno1" class="reqfield" name="telno1" type="text" value="">
+                            <span class="reqsp">Phone Number cannot be left blank.</span>
+                        </li>
+                        <li>
+                            <label for="email1">e-mail:</label>
+                            <input id="email1" class="reqfield" name="email1" type="text" value="">
+                            <span class="reqsp">e-mail cannot be left blank.</span>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="outline4"><h2>Education</h2></legend>
+                <div class="speakerinfo">
+                    <ul>
+                        <li>
+                            <label for="degree1">Highest Academic Degree:</label>
+                            <input id="degree1" name="degree1" type="text">
+                        </li>
+                        <br>
+                        <li>
+                            <label for="company1">Institution or Organization:</label>
+                            <input id="company1" name="company1" type="text">
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="outline4">Additional Information</legend>
+
+                <div class="spkrques">
+                    <fieldset class="subfield">
+                        <legend><h3>Have you presented at a national conference or taught a college-level, semester-long
+                            course?*</h3></legend>
+                        <div class="oneques">
                         <span>
                             <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio">
                             <label for="natconfexp1_yes">yes</label>
                         </span>
-                        <br>
-                        <span>
+                            <br>
+                            <span>
                             <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio">
                             <label for="natconfexp1_no">no</label>
                         </span>
-                    </div>
-                </fieldset>
-                <fieldset class="subfield">
-                    <div class="suggest_form">
-                        <label class="ta-label" for="Speaker1bio"><h3>Presenter 1 bio&nbsp;</h3>(1500 characters maximum)</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="subfield">
+                        <legend><h3>Biography</h3></legend>
+                        <div class="suggest_form">
+                            <label class="ta-label" for="Speaker1bio">Tell Us About Yourself (1500 characters maximum)</label>
+                            <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="7" maxlength="1003"></textarea>
 
+                        </div>
+                    </fieldset>
+                    <div class="formcol">
 
-                        <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="7"
-                                  maxlength="1003">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum fuga harum id labore laborum nulla officiis quibusdam, soluta ut. A ad at, blanditiis commodi consectetur fugiat id quos sit?</textarea>
+                        <!-- bottom of expanding sections -->
 
+                        <div id="propinfo">
 
-                    </div>
-                </fieldset>
-                <div class="formcol">
-
-                    <!-- bottom of expanding sections -->
-
-                    <div id="propinfo">
-
-                        <h3 class="outline4">Proposal Information</h3>
-
-
-                        <fieldset class="subfield">
-                            <legend><h4><span id="proplegend">Title of Proposal (150 characters maximum)</span><span class="star">*</span></h4></legend>
+                            <fieldset class="subfield">
+                                <legend class="outline4"><h3>Proposal Information</h3></legend>
+                                <!--<span id="proplegend">Title of Proposal (150 characters maximum)</span><span class="star">*</span>-->
                                 <label for="proptitle">Proposal Title:</label>
                                 <input id="proptitle" name="proptitle" class="reqfield" type="text" maxlength="152">
-                                <span>
-                                    <p class="reqsp">Title cannot be left blank.</p>
-                                </span>
-                        </fieldset>
+                                <span class="reqsp">Title cannot be left blank.</span>
+                            </fieldset>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </fieldset>
-    </form>
-    <button type="button" onclick="input_Validation()">Submit your proposal</button>
-
-
+            </fieldset>
+        </form>
+    </div>
+    <button type="submit" form="" onclick="input_Validation()">Submit your proposal</button>
 </div>
 </body>
 </html>
