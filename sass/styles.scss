@@ -12,20 +12,6 @@ $plainwhite: #ffff;
   background-color: $lightpaper;
 }
 
-section h1 {
-
-}
-
-section h2 {
-
-}
-
-section h3 {
-
-}
-
-
-
 input[type="text"] {
   border-bottom: 2px solid $palegray;
   font-size: 1.1rem;
@@ -35,16 +21,20 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
+  border-bottom: 2px solid $deepgreen;
+  font-weight: 500;
   ~label {
     display: block;
     position: absolute;
     margin-top: 0;
     transition: 0.8s;
     color: black;
-    font-weight: 500;
   }
-  border-bottom: 2px solid $deepgreen;
-  font-weight: 500;
 }
 
-
+label.stay {
+  display: block;
+  position: absolute;
+  margin-top: 0;
+  color: black;
+}

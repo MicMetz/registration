@@ -10,13 +10,6 @@ fieldset {
     border-color: black;
 }
 
-/*
-li {
-    margin: 25px auto 5px 0;
-}
-
- */
-
 ul {
     list-style-type: none;
 }
@@ -140,8 +133,14 @@ li span {
     visibility: hidden;
 }
 
-.reqsp::before {
+span.valid::before {
     color: #0d8011;
-    visibility: hidden;
+    visibility: visible;
     content: "\2714";
+}
+
+span.invalid::before {
+    color: #8c000f;
+    visibility: visible;
+    content: "\2731";
 }

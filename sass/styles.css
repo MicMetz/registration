@@ -20,7 +20,13 @@ input[type=text]:focus ~ label {
   margin-top: 0;
   transition: 0.8s;
   color: black;
-  font-weight: 500;
+}
+
+label.stay {
+  display: block;
+  position: absolute;
+  margin-top: 0;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
