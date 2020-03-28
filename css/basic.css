@@ -56,7 +56,6 @@ button:focus {
 }
 
 input {
-    text-align: left;
     border: 0;
     color: black;
     background: transparent;
@@ -139,4 +138,10 @@ li span {
     margin: auto;
     padding-left: 12px;
     visibility: hidden;
+}
+
+.reqsp::before {
+    color: #0d8011;
+    visibility: hidden;
+    content: "\2714";
 }

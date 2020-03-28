@@ -35,7 +35,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  ~ label {
+  ~label {
     display: block;
     position: absolute;
     margin-top: 0;
@@ -46,3 +46,5 @@ input[type="text"]:focus {
   border-bottom: 2px solid $deepgreen;
   font-weight: 500;
 }
+
+
