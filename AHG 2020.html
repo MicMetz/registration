@@ -33,9 +33,10 @@
         <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20, 2020</p>
     </header>
     <div id="content">
+        <span style="text-align: center"><p>All fields marked with an</p><p style="color: #8c000f">*</p><p>must be completed.</p></span>
         <form action="http://webdevgroupcu.org/atlas4519/AHGpropform/AHG_saveprop2020.php" method="post" id="AHGproposalform2020">
             <fieldset>
-                <legend class="outline4"><h2>Speaker Information</h2></legend>
+                <legend class="outline4">Speaker Information</legend>
                 <section class="speakerinfo">
                     <ul>
                         <li class="form-item">
@@ -58,7 +59,7 @@
                 </section>
             </fieldset>
             <fieldset>
-                <legend class="outline4"><h2>Education</h2></legend>
+                <legend class="outline4">Education</legend>
                 <section class="speakerinfo2">
                     <ul>
                         <li class="form-item">
@@ -78,21 +79,22 @@
 
                 <section class="spkrques">
                     <fieldset class="subfield">
-                        <legend><h3>Have you presented at a national conference or taught a college-level, semester-long course?*</h3></legend>
+                        <legend>Have you presented at a national conference or taught a college-level, semester-long course?</legend>
                         <div class="oneques">
+                            <span class="reqspRad invalid">Required</span>
                             <span  class="form-item">
-                                <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio">
+                                <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio" class="reqfield_Radio" onclick="setStateRadio()">
                                 <label for="natconfexp1_yes">yes</label>
                             </span>
                             <br>
                             <span  class="form-item">
-                                <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio">
+                                <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio" class="reqfield_Radio" onclick="setStateRadio()">
                                 <label for="natconfexp1_no">no</label>
                             </span>
                         </div>
                     </fieldset>
                     <fieldset class="subfield">
-                        <legend><h3>Biography</h3></legend>
+                        <legend>Biography</legend>
                         <div class="suggest_form">
                             <label class="ta-label" for="Speaker1bio">Tell Us About Yourself (1500 characters maximum)</label>
                             <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="7" maxlength="1003"></textarea>
@@ -106,7 +108,7 @@
                         <section id="propinfo">
 
                             <fieldset class="subfield">
-                                <legend class="outline4"><h3>Proposal Information</h3></legend>
+                                <legend>Proposal Information</legend>
                                 <ul>
                                     <li class="form-item">
                                         <input id="proptitle" name="proptitle" class="reqfield" type="text" maxlength="152" onfocusout="setState()"><span class="reqsp">Title cannot be left blank.</span>
