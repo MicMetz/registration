@@ -25,104 +25,115 @@
 
 </head>
 
-<body onload="setState()">
+<body>
 <script src="scripts/input_Validation.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", evt => {
+        setState();
+    });
+</script>
 <div id="page">
     <header id="formheader">
         <h1 id="formstart">AHG Presenter Proposal Form 2020</h1>
-        <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20, 2020</p>
+        <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20,
+            2020</p>
     </header>
     <div id="content">
         <span style="text-align: center"><p>All fields marked with an</p><p style="color: #8c000f">*</p><p>must be completed.</p></span>
-        <form action="http://webdevgroupcu.org/atlas4519/AHGpropform/AHG_saveprop2020.php" method="post" id="AHGproposalform2020">
-            <fieldset>
+        <form action="http://webdevgroupcu.org/atlas4519/AHGpropform/AHG_saveprop2020.php" method="post"
+              id="AHGproposalform2020">
+            <fieldset class="speakerinfo">
                 <legend class="outline4">Speaker Information</legend>
-                <section class="speakerinfo">
-                    <ul>
-                        <li class="form-item">
-                            <input id="fstspkr1" class="reqfield" name="fstspkr1" type="text" value="" onfocusout="setState()"><span class="reqsp">First Name cannot be left blank.</span>
-                            <label for="fstspkr1" class="reqlabel">First Name:</label>
-                        </li>
-                        <li class="form-item">
-                            <input id="lstname1" class="reqfield" name="lstname1" type="text" value="" onfocusout="setState()"><span class="reqsp">Last Name cannot be left blank.</span>
-                            <label for="lstname1" class="reqlabel">Last Name:</label>
-                        </li>
-                        <li class="form-item">
-                            <input id="telno1" class="reqfield" name="telno1" type="text" value="" onfocusout="setState()"><span class="reqsp">Phone Number cannot be left blank.</span>
-                            <label for="telno1" class="reqlabel">Phone Number:</label>
-                        </li>
-                        <li class="form-item">
-                            <input id="email1" class="reqfield" name="email1" type="text" value="" onfocusout="setState()"><span class="reqsp">e-mail cannot be left blank.</span>
-                            <label for="email1" class="reqlabel">e-mail:</label>
-                        </li>
-                    </ul>
-                </section>
+                <ul>
+                    <li class="form-item">
+                        <input id="fstspkr1" class="reqfield" name="fstspkr1" type="text" value=""
+                               onfocusout="setState()"><span class="reqsp">First Name cannot be left blank.</span>
+                        <label for="fstspkr1" class="reqlabel">First Name:</label>
+                    </li>
+                    <li class="form-item">
+                        <input id="lstname1" class="reqfield" name="lstname1" type="text" value=""
+                               onfocusout="setState()"><span class="reqsp">Last Name cannot be left blank.</span>
+                        <label for="lstname1" class="reqlabel">Last Name:</label>
+                    </li>
+                    <li class="form-item">
+                        <input id="telno1" class="reqfield" name="telno1" type="text" value=""
+                               onfocusout="setState()"><span class="reqsp">Phone Number cannot be left blank.</span>
+                        <label for="telno1" class="reqlabel">Phone Number:</label>
+                    </li>
+                    <li class="form-item">
+                        <input id="email1" class="reqfield" name="email1" type="text" value=""
+                               onfocusout="setState()"><span class="reqsp">e-mail cannot be left blank.</span>
+                        <label for="email1" class="reqlabel">e-mail:</label>
+                    </li>
+                </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="speakerinfo2">
                 <legend class="outline4">Education</legend>
-                <section class="speakerinfo2">
-                    <ul>
-                        <li class="form-item">
-                            <input id="degree1" name="degree1" type="text">
-                            <label for="degree1">Highest Academic Degree:</label>
-                        </li>
-                        <br>
-                        <li class="form-item">
-                            <input id="company1" name="company1" type="text">
-                            <label for="company1">Institution or Organization:</label>
-                        </li>
-                    </ul>
-                </section>
+                <ul>
+                    <li class="form-item">
+                        <input id="degree1" name="degree1" type="text">
+                        <label for="degree1">Highest Academic Degree:</label>
+                    </li>
+                    <br>
+                    <li class="form-item">
+                        <input id="company1" name="company1" type="text">
+                        <label for="company1">Institution or Organization:</label>
+                    </li>
+                </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="spkrques">
                 <legend class="outline4">Additional Information</legend>
+                <fieldset class="subfield">
+                    <legend>Have you presented at a national conference or taught a college-level, semester-long
+                        course?<span class="reqsp">Required</span>
+                    </legend>
+                    <div class="oneques">
+                        <input value="yes" id="natconfexp1_yes" name="natconfexp1" type="radio"
+                               onclick="setStateRadio(this.value)">
+                        <label for="natconfexp1_yes">yes</label>
+                        <br>
+                        <input value="no" id="natconfexp1_no" name="natconfexp1" type="radio"
+                               onclick="setStateRadio(this.value)">
+                        <label for="natconfexp1_no">no</label>
 
-                <section class="spkrques">
-                    <fieldset class="subfield">
-                        <legend>Have you presented at a national conference or taught a college-level, semester-long course?</legend>
-                        <div class="oneques">
-                            <span class="reqspRad invalid">Required</span>
-                            <span  class="form-item">
-                                <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio" class="reqfield_Radio" onclick="setStateRadio()">
-                                <label for="natconfexp1_yes">yes</label>
-                            </span>
-                            <br>
-                            <span  class="form-item">
-                                <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio" class="reqfield_Radio" onclick="setStateRadio()">
-                                <label for="natconfexp1_no">no</label>
-                            </span>
-                        </div>
-                    </fieldset>
-                    <fieldset class="subfield">
-                        <legend>Biography</legend>
-                        <div class="suggest_form">
-                            <label class="ta-label" for="Speaker1bio">Tell Us About Yourself (1500 characters maximum)</label>
-                            <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="7" maxlength="1003"></textarea>
+                        <input type="text" id="radreq" class="reqfield" onchange="setState()">
+                        <label class="reqlabel"></label>
 
-                        </div>
-                    </fieldset>
-                    <div class="formcol">
 
-                        <!-- bottom of expanding sections -->
-
-                        <section id="propinfo">
-
-                            <fieldset class="subfield">
-                                <legend>Proposal Information</legend>
-                                <ul>
-                                    <li class="form-item">
-                                        <input id="proptitle" name="proptitle" class="reqfield" type="text" maxlength="152" onfocusout="setState()"><span class="reqsp">Title cannot be left blank.</span>
-                                        <label for="proptitle" class="reqlabel">Proposal Title:</label>
-                                    </li>
-                                </ul>
-                            </fieldset>
-                        </section>
                     </div>
-                </section>
+                </fieldset>
+                <fieldset class="subfield">
+                    <legend>Biography</legend>
+                    <div class="suggest_form">
+                        <label class="ta-label" for="Speaker1bio">Tell Us About Yourself (1500 characters
+                            maximum)</label>
+                        <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="7" maxlength="1003"></textarea>
+
+                    </div>
+                </fieldset>
+                <div class="formcol">
+
+                    <!-- bottom of expanding sections -->
+
+                    <section id="propinfo">
+
+                        <fieldset class="subfield">
+                            <legend>Proposal Information</legend>
+                            <ul>
+                                <li class="form-item">
+                                    <input id="proptitle" name="proptitle" class="reqfield" type="text" maxlength="152"
+                                           onfocusout="setState()"><span
+                                        class="reqsp">Title cannot be left blank.</span>
+                                    <label for="proptitle" class="reqlabel">Proposal Title:</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </section>
+                </div>
             </fieldset>
         </form>
     </div>
     <button type="button" onclick="input_Validation()">Submit your proposal</button>
-</div>
+</div>\
 </body>
 </html>

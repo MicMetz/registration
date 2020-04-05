@@ -39,6 +39,7 @@ button {
     border-radius: 10px;
     width: 150px;
     height: 50px;
+    font-size: 16px;
     color: white;
     border: none;
     background-image: linear-gradient(blue, #1e3682);
@@ -49,9 +50,14 @@ button:focus {
 }
 
 input {
+    font-size: 16px;
     border: 0;
     color: black;
     background: transparent;
+}
+
+#radreq {
+    display: none !important;
 }
 
 label {
@@ -61,6 +67,7 @@ label {
     padding-bottom: 0;
     display: block;
     position: relative;
+    font-size: 16px;
 }
 
 textarea {
@@ -125,7 +132,7 @@ li span {
 
 }
 
-.reqsp, .reqspRad {
+.reqsp {
     display: inline-block;
     color: #8c000f;
     margin: auto;
@@ -133,10 +140,13 @@ li span {
     visibility: hidden;
 }
 
-.reqspRad {
-    display: block;
+.radreq {
+    display: inline-block;
+    color: #8c000f;
+    margin: auto;
+    padding-left: 12px;
+    visibility: hidden;
 }
-
 
 span.valid::before {
     color: #0d8011;
