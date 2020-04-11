@@ -1,6 +1,8 @@
 let report = document.getElementsByClassName("reqsp");
 let target = document.getElementsByClassName("reqfield");
 let targetlabel = document.getElementsByClassName("reqlabel");
+let off_target = document.getElementsByClassName("nonreq");
+let off_targetLabel = document.getElementsByClassName("nonreqlabel");
 
 function input_Validation() {
     let checkB4 = 0;
@@ -33,12 +35,25 @@ function setState() {
             else { targetlabel[i].classList.remove("stay"); }
         }
     }
+    for (let i = 0; i < off_target.length; i++) {
+        if (off_target[i].value !== "") {
+            off_targetLabel[i].classList.add("stay");
+        }
+        else { off_targetLabel[i].classList.remove("stay"); }
+    }
 }
 
 function setStateRadio(x) {
     debugger
     let targetRadio = document.getElementsByClassName("reqfield")[4];
-
     targetRadio.value = x;
     setState();
+}
+
+function maxCharCount(x) {
+    let txtrep = document.getElementById("a_rep");
+    let lmin = 1500;
+    let lleft = lmin - x.value.length;
+
+    txtrep.innerText = lleft + " characters remaining.";
 }

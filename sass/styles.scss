@@ -21,14 +21,14 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-bottom: 2px solid $deepgreen;
+  border-bottom: 2px solid #bb0000;
   font-weight: 500;
   ~label {
     display: block;
     position: absolute;
     margin-top: 0;
     transition: 0.8s;
-    color: #28971c;
+    color: #7A0000;
   }
 }
 

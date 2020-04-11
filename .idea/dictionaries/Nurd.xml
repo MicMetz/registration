@@ -4,6 +4,8 @@
       <w>gproposalform</w>
       <w>inpsize</w>
       <w>labsize</w>
+      <w>nonreq</w>
+      <w>nonreqlabel</w>
       <w>radreq</w>
       <w>reqinp</w>
       <w>reqlabel</w>

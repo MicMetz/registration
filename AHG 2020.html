@@ -71,13 +71,13 @@
                 <legend class="outline4">Education</legend>
                 <ul>
                     <li class="form-item">
-                        <input id="degree1" name="degree1" type="text">
-                        <label for="degree1">Highest Academic Degree:</label>
+                        <input id="degree1" name="degree1" type="text" class="nonreq" onfocusout="setState()">
+                        <label for="degree1" class="nonreqlabel">Highest Academic Degree:</label>
                     </li>
                     <br>
                     <li class="form-item">
-                        <input id="company1" name="company1" type="text">
-                        <label for="company1">Institution or Organization:</label>
+                        <input id="company1" name="company1" type="text" class="nonreq" onfocusout="setState()">
+                        <label for="company1" class="nonreqlabel">Institution or Organization:</label>
                     </li>
                 </ul>
             </fieldset>
@@ -96,9 +96,7 @@
                                onclick="setStateRadio(this.value)">
                         <label for="natconfexp1_no">no</label>
 
-                        <input type="text" id="radreq" class="reqfield" onchange="setState()">
-                        <label class="reqlabel"></label>
-
+                        <label for="radreq_in" class="reqlabel" id="radreq"><input type="text" id="radreq_in" class="reqfield">\0</label>
 
                     </div>
                 </fieldset>
@@ -107,8 +105,8 @@
                     <div class="suggest_form">
                         <label class="ta-label" for="Speaker1bio">Tell Us About Yourself (1500 characters
                             maximum)</label>
-                        <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="7" maxlength="1003"></textarea>
-
+                        <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="7" maxlength="1500" onkeyup="maxCharCount(this);"></textarea>
+                        <span id="a_rep">1500 characters remaining.</span>
                     </div>
                 </fieldset>
                 <div class="formcol">
